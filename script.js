@@ -5,17 +5,20 @@ prompt("Hola " + nombre + " , ¿queres invertir en crypto?");
 
 function sumar(prod1,prod2,prod3){
     return prod1 + prod2 + prod3
+    prod1= Number
+    prod2= Number
+    prod3 = Number
+
 }
 
-let primerProd = Number(prompt("Ingresa el primer precio "))
-let segundoProd = Number(prompt("ingresa el segundo precio "))
-let tercerProd = Number(prompt("ingresa el tercer precio "))
+let primerProd = Number(prompt("Ingresa cuantos pesos te gustaria invertir? "))
+let segundoProd = Number(prompt("ingresa cuantosbinance te gustaria tener? "))
+let tercerProd = Number(prompt(" hoy el binance esta en 300 "))
 
 let PFApagar = sumar(primerProd,segundoProd,tercerProd)
 
-var descuento = PFApagar*0.85
 
-let pagoEfectivo = prompt("abona en efectivo? ")
+let pagoEfectivo = prompt("PAgas con trasnferencia? ")
 
 if (pagoEfectivo ==="si" || pagoEfectivo === "Si" || pagoEfectivo === "SI" || pagoEfectivo === "sI") {
     alert("ha obtenido un descuento del 15% su monto a abonar es: " + descuento, );    
